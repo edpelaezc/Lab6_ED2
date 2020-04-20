@@ -1,0 +1,10 @@
+C:\GitHub\Lab6_ED2\Lab6\clienteHTTP\bin\Debug\netcoreapp3.1\clienteHTTP.exe
+C:\GitHub\Lab6_ED2\Lab6\clienteHTTP\bin\Debug\netcoreapp3.1\clienteHTTP.deps.json
+C:\GitHub\Lab6_ED2\Lab6\clienteHTTP\bin\Debug\netcoreapp3.1\clienteHTTP.runtimeconfig.json
+C:\GitHub\Lab6_ED2\Lab6\clienteHTTP\bin\Debug\netcoreapp3.1\clienteHTTP.runtimeconfig.dev.json
+C:\GitHub\Lab6_ED2\Lab6\clienteHTTP\bin\Debug\netcoreapp3.1\clienteHTTP.dll
+C:\GitHub\Lab6_ED2\Lab6\clienteHTTP\bin\Debug\netcoreapp3.1\clienteHTTP.pdb
+C:\GitHub\Lab6_ED2\Lab6\clienteHTTP\obj\Debug\netcoreapp3.1\clienteHTTP.AssemblyInfoInputs.cache
+C:\GitHub\Lab6_ED2\Lab6\clienteHTTP\obj\Debug\netcoreapp3.1\clienteHTTP.AssemblyInfo.cs
+C:\GitHub\Lab6_ED2\Lab6\clienteHTTP\obj\Debug\netcoreapp3.1\clienteHTTP.dll
+C:\GitHub\Lab6_ED2\Lab6\clienteHTTP\obj\Debug\netcoreapp3.1\clienteHTTP.pdb
