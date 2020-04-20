@@ -9,9 +9,19 @@ namespace Lab6
     {
         int g = 43;
         int p = 107;
+        int a = 0;
+        int b = 0;
 
-        public DiffieHelman(int a, int b) { 
+        public DiffieHelman(int a, int b) {
+            this.a = a; 
+            this.b = b;
+        }
 
+        public int compute(int num) {
+            long aux = (long)Math.Pow(g, a);
+            int reponse = (int)(aux % p);
+
+            return 0;
         }
     }
 }

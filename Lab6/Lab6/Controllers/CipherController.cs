@@ -12,14 +12,12 @@ namespace Lab6.Controllers
     public class CipherController : ControllerBase
     {
         // GET: api/Cipher
-        [HttpGet("{algorithm}/{keys}")]
-        public int getPublicKey(string algorithm, string keys)//las claves se enviaran separadas por coma [a,b]
+        [HttpGet("{algorithm}/{firstKey}/{secondKey}")]
+        public int getPublicKey(string algorithm, int firstKey, int secondKey)//las claves se enviaran separadas por coma [a,b]
         {
             if (algorithm.Equals("diffie"))
-            {
-                string[] getKeys  = keys.Split(',');
-                int a = int.Parse(getKeys[0]);
-                int b = int.Parse(getKeys[1]);
+            {                
+                DiffieHelman cipherKey = new DiffieHelman(firstKey, secondKey);
             }
             return 0;
         }
