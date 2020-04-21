@@ -6000,11 +6000,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitHub\\Lab6_ED2\\Lab6\\Lab6\\Lab6.csproj",
-      "projectName": "Lab6",
-      "projectPath": "C:\\GitHub\\Lab6_ED2\\Lab6\\Lab6\\Lab6.csproj",
+      "projectUniqueName": "C:\\GitHub\\Lab6_ED2\\lab6\\lab6\\lab6.csproj",
+      "projectName": "lab6",
+      "projectPath": "C:\\GitHub\\Lab6_ED2\\lab6\\lab6\\lab6.csproj",
       "packagesPath": "C:\\Users\\edanP\\.nuget\\packages\\",
-      "outputPath": "C:\\GitHub\\Lab6_ED2\\Lab6\\Lab6\\obj\\",
+      "outputPath": "C:\\GitHub\\Lab6_ED2\\lab6\\lab6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
