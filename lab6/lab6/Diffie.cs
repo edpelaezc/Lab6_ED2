@@ -17,16 +17,30 @@ namespace lab6
             this.b = b;
         }
 
+        double mod(double a, double n)
+        {
+            double result = a % n;
+            if ((result < 0 && n > 0) || (result > 0 && n < 0))
+            {
+                result += n;
+            }
+            return result;
+        }
+
         public int generateKey() {
             long auxA = (long)Math.Pow(g, a);
             long auxB = (long)Math.Pow(g, b);
 
-            int A = (int)(auxA % p);
-            int B = (int)(auxB % p);
+            double A = mod(auxA, p);
+            double B = mod(auxB, p);
+            double Ka = mod(Math.Pow(B, a), p);
+            double Kb = mod(Math.Pow(A, b), p);
 
-            int K = (int)(Math.Pow(B, a) % p);
-            int auxK = (int)(Math.Pow(A, b) % p);
-            return K;
+            if (Ka == Kb)
+            {
+                return (int)Ka;
+            }
+            return 0;
         }
     }
 }

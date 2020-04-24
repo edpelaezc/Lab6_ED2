@@ -9,57 +9,59 @@ namespace lab6
 {
     public class Caesar
     {
+        List<char> newAlphabet = new List<char>();
+        List<char> originalAlphabet = new List<char>();
+        int rotaciones = 0;
+
         public Caesar() { }
 
-        private int searchInAlphabeth(String alphabet, char desiredChar)
+        private void buildAlphabet(int Shifting)
         {
+            List<byte> modified = new List<byte>();
+            List<byte> original = new List<byte>();
 
-            char[] chars = alphabet.ToCharArray();
-
-            for (int i = 0; i < chars.Length; i++)
+            for (int i = 97; i < 123; i++)
             {
-                if (Char.ToUpper(desiredChar) == Char.ToUpper(chars[i]))
-                    return i;
+                original.Add((byte)i);
+                modified.Add((byte)i);
             }
-            return -1;
+
+            this.rotaciones = Shifting % original.Count();
+
+            for (int i = 0; i < this.rotaciones; i++)
+            {
+                byte aux = modified[0];
+                modified.RemoveAt(0);
+                modified.Add(aux);
+            }
+
+            newAlphabet = new List<char>();
+            originalAlphabet = new List<char>();
+
+            for (int i = 0; i < original.Count; i++)
+            {
+                originalAlphabet.Add(Convert.ToChar(original[i]));
+                newAlphabet.Add(Convert.ToChar(modified[i]));
+            }
         }
 
         public void cifrarCesar(string frase, int distancia, string fileName)
         {
-            String alfabeto = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
-            String nuevaFrase = "";
+            buildAlphabet(distancia);
 
-            char[] original = frase.ToCharArray();
+            string nuevaFrase = "";            
 
-            for (int i = 0; i < original.Length; i++)
+            for (int i = 0; i < frase.Length; i++)
             {
-                char originalChar = original[i];
-
-                if (originalChar == ' ')
+                int aux = originalAlphabet.IndexOf(frase[i]);
+                if (aux == -1)
                 {
-                    nuevaFrase += originalChar;
+                    nuevaFrase += frase[i];
                 }
                 else
                 {
-                    int shift = searchInAlphabeth(alfabeto, originalChar) + distancia;
-                    char newChar = ' ';
-
-                    while (shift >= alfabeto.Length)
-                    {
-                        shift = shift - alfabeto.Length;
-                    }
-
-                    if (Char.IsUpper(originalChar))
-                    {
-                        newChar = alfabeto.ElementAt(shift);
-                    }
-                    else
-                    {
-                        newChar = Char.ToLower(alfabeto.ElementAt(shift));
-                    }
-                    nuevaFrase += newChar;
+                   nuevaFrase += newAlphabet[aux];
                 }
-
             }
 
             //escribir archivo 
