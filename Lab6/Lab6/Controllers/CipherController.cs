@@ -12,5 +12,13 @@ namespace lab6.Controllers
         {
             return View();
         }
+
+        [HttpPost, ActionName("SendKeys")]
+        public void SendKeys(int a, int b)
+        {
+            Console.WriteLine(a+b);
+            Diffie secretKey = new Diffie(a, b);
+            secretKey.generateKey();
+        }
     }
 }

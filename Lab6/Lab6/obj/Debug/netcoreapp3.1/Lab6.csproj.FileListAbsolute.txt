@@ -107,3 +107,5 @@ C:\GitHub\Lab6_ED2\lab6\lab6\obj\Debug\netcoreapp3.1\lab6.csproj.CopyComplete
 C:\GitHub\Lab6_ED2\lab6\lab6\obj\Debug\netcoreapp3.1\lab6.dll
 C:\GitHub\Lab6_ED2\lab6\lab6\obj\Debug\netcoreapp3.1\lab6.pdb
 C:\GitHub\Lab6_ED2\lab6\lab6\obj\Debug\netcoreapp3.1\Razor\Views\Cipher\Index.cshtml.g.cs
+C:\GitHub\Lab6_ED2\lab6\lab6\obj\Debug\netcoreapp3.1\lab6.csproj.CoreCompileInputs.cache
+C:\GitHub\Lab6_ED2\lab6\lab6\obj\Debug\netcoreapp3.1\lab6.genruntimeconfig.cache
