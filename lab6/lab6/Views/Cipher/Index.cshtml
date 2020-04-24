@@ -4,11 +4,18 @@
 }
 
 <h1>Cipher</h1>
-<form asp-action="SendKeys">
+<form asp-action="getPublicKey">
     <p>Ingresar clave a: </p>
-    <input type="password" name="a"/>
+    <input type="password" name="a" />
     <p>Ingresar clave b: </p>
-    <input type="password" name="b"/>
+    <input type="password" name="b" />
     <input type="submit" value="Enviar" />
 </form>
 
+
+
+<form asp-action="caesar2" enctype="multipart/form-data" method="post">
+    <p>Archivo a cifrar:</p>
+    <input type="file" name="file" />
+    <button type="submit">Subir</button>
+</form>
