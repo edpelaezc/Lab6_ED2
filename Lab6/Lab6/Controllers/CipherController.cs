@@ -60,7 +60,7 @@ namespace lab6.Controllers
             string text = result.ToString();
             text = text.Remove(text.Length - 1);
             text = text.Remove(text.Length - 1);
-            Data.Instance.caesarCipher.cifrarCesar(text, Data.Instance.secretKey, cipherFile.FileName);
+            Data.Instance.caesarCipher.descifrarCesar(text, Data.Instance.secretKey, cipherFile.FileName);
             return RedirectToAction(nameof(Index));
         }
 

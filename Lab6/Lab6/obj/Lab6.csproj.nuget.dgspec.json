@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitHub\\Lab6_ED2\\lab6\\lab6\\lab6.csproj": {}
+    "C:\\Users\\llaaj\\Documents\\Lab6_ED2\\Lab6\\lab6\\lab6.csproj": {}
   },
   "projects": {
-    "C:\\GitHub\\Lab6_ED2\\lab6\\lab6\\lab6.csproj": {
+    "C:\\Users\\llaaj\\Documents\\Lab6_ED2\\Lab6\\lab6\\lab6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\Lab6_ED2\\lab6\\lab6\\lab6.csproj",
+        "projectUniqueName": "C:\\Users\\llaaj\\Documents\\Lab6_ED2\\Lab6\\lab6\\lab6.csproj",
         "projectName": "lab6",
-        "projectPath": "C:\\GitHub\\Lab6_ED2\\lab6\\lab6\\lab6.csproj",
-        "packagesPath": "C:\\Users\\edanP\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\Lab6_ED2\\lab6\\lab6\\obj\\",
+        "projectPath": "C:\\Users\\llaaj\\Documents\\Lab6_ED2\\Lab6\\lab6\\lab6.csproj",
+        "packagesPath": "C:\\Users\\llaaj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\llaaj\\Documents\\Lab6_ED2\\Lab6\\lab6\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\edanP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\llaaj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -65,7 +65,39 @@ namespace lab6
             }
 
             //escribir archivo 
-            string folder = @"C:\LABORATORIO6\";
+            string folder = @"C:\LABORATORIO6\Cifrado\";
+            string fullPath = folder + fileName;
+            // crear el directorio
+            DirectoryInfo directory = Directory.CreateDirectory(folder);
+
+            using (StreamWriter file = new StreamWriter(fullPath))
+            {
+                file.WriteLine(nuevaFrase);
+                file.Close();
+            }
+        }
+
+        public void descifrarCesar(string frase, int distancia, string fileName)
+        {
+            buildAlphabet(distancia);
+
+            string nuevaFrase = "";
+
+            for (int i = 0; i < frase.Length; i++)
+            {
+                int aux = newAlphabet.IndexOf(frase[i]);
+                if (aux == -1)
+                {
+                    nuevaFrase += frase[i];
+                }
+                else
+                {
+                    nuevaFrase += originalAlphabet[aux];
+                }
+            }
+
+            //escribir archivo 
+            string folder = @"C:\LABORATORIO6\Descifrado\";
             string fullPath = folder + fileName;
             // crear el directorio
             DirectoryInfo directory = Directory.CreateDirectory(folder);
